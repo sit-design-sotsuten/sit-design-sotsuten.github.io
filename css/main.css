@@ -1,0 +1,17 @@
+/* モバイルファースト? PCファースト? */
+/* とりあえずPCファースト */
+
+.wrapper {
+    width: 100%;
+    margin: 10% 5%;
+}
+
+.abstraction h2{
+    font-size: 10vw;
+}
+
+@media screen and (max-width: 520px) {
+    .wrapper {
+        max-width: 520px;
+    }
+}
