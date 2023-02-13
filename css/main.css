@@ -1,54 +1,72 @@
 /* モバイルファースト? PCファースト? */
 /* とりあえずPCファースト */
 
+/* .wrapper {
+    height: 4590px;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
 header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 6%;
-    background-color: #b3b3b3;
-    align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 11.4%;
+    top: 0%;
+    left: 0%;
+
+    background: #FFFFFF;
+
+    z-index: 10;
 }
 
 .logo {
-    /* position: relative;
-    left: 0%; */
-    margin-right: auto;
-    margin-left: 1.3%;
-    width: 15%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    position: absolute;
+    left: 1.17%;
+    top: 11.39%;
 }
 
 .logo img {
-    width: auto;
-    height: 60%;
+    width: 60px;
+    height: 60px;
 }
 
-nav{
-    width: 60%;
-    left: 0;
-    margin-right: 3%;
-}
 .menu {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    /* margin: auto; */
-    margin-left: -5%;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 44.03%;
+    height: 21.74%;
+    left: 26.99%;
+    top: 33.04%;
 }
 
 .menu_item {
     list-style: none;
     display: inline-block;
-    padding: 3%;
-    font-size: 8%;
     white-space: nowrap;
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21.74%;
 }
 
 .menu_item a {
-    color: white;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
@@ -57,64 +75,286 @@ nav{
     opacity: 50%;
 }
 
-.SNS {
-    /* display: inline-block; */
-    margin-left: auto;
-    /* margin-top: 0.5%; */
-    /* margin-right: 1%; */
-    width: 13%;
-    align-items: center;
-}
-
-.SNS ul{
-    width: 60%;
+.twitter {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 2% 10%;
+    padding: 0px;
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 90.56%;
+    top: 12.39%;
 }
 
-.SNS li{
-    list-style: none;
-    /* padding: 2% 5%; */
-    /* width: 100%; */
-    padding-left: 10%;
-}
-
-.SNS img{
-    width: 100%;
+.twitter img {
+    width: 30px;
+    height: 24.69px;
+    
     cursor: pointer;
-    margin-top: 15%;
-    margin-left: 10%;
-    padding-left: 40%;
 }
 
-.wrapper {
-    width: 100%;
-    margin: 10% 5%;
+.instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 94.72%;
+    top: 12.39%;
 }
+
+.instagram img {
+    width: 30px;
+    height: 29.99px;
+
+    cursor: pointer;
+}
+/*  ヘッダー */
+
+/* 区切り線 */
+.delimiter {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+
+    background-image: url(../image/bar.png);
+}
+
+#header-delimiter {
+    top: 11.4%;
+    height: 0.49%;
+}
+/* 区切り線 */
+
+/* コンテンツ */
+.contents {
+    width: 100%;
+    height: 4590px;
+    top: 0;
+    left: 0;    
+}
+
+.background {
+    background-image: url(../image/img.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+
+    width: 100%;
+    height: 810px;
+}
+
+.page {
+    height: 810px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    position: relative;
+    margin: 0 auto;
+    width: 53.33%;
+    top: 30.1%;
+    height: 52vh;
+    /* left: 22.44%; */
+}
+
+.top_frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0 auto;
+    margin-left: 5%;
+    width: 100%;
+    height: 85%;
+}
+
+.top_logo {
+    /* ロゴ */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 40%;
+    height: 89.7%;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.top_logo img {
+    width: 352px;
+    height: 329.85px;
+}
+
+.top_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 89.7%;
+}
+
+.top_text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.top_text li {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    
+    color: #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.schedule {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 5vh;
+    
+    padding-top: 4%;
+    margin: 0 auto;
+
+    color: #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.schedule span {
+    font-size: 1.6em;
+}
+
+/* あいさつ */
+.theme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0px 0px;
+
+    width: 77.78%;
+    height: 810px;
+    margin: 0 auto;
+}
+
+.theme_frame {
+    width: 64.7%;
+    margin: 0 auto;
+    padding-left: 5%;
+}
+
+.theme_frame h2 {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.theme_frame h3 {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.theme_frame p {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+}
+
+.theme_frame span {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+
+    color: #FFFFFF;
+}
+
+/* コンテンツ */
 
 .reserve_btn {
+    /* 予約フォーム */
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
     position: fixed;
+    width: 46px;
+    height: 261.14px;
     top: 15%;
     right: 0;
 
-    height: auto;
+    background: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px 0px 0px 8px;
 
     display: inline-block;
     writing-mode: vertical-rl;
     text-orientation: upright;
-
-    border-radius: 6px 0 0 6px;
-    padding: 1.5% 1%;
 
     font-size: 8%;
     letter-spacing: 1em;
     text-align: justify;
     white-space: nowrap;
 
-    background-color: #b3b3b3;
-    color: white;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -122,53 +362,8 @@ nav{
     opacity: 50%;
 }
 
-.abstraction h2{
-    font-size: 3vw;
-}
-
-.contents {
-    height: 200%;
-}
-
-.top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
-}
-
-.top_logo {
-    margin-right: 4%;
-    margin-left: -3%;
-}
-
-.top_logo img {
-    width: 25vw;
-}
-
-.top_text ul {
-    list-style: none;
-}
-
-.top_text li {
-    margin: 2% auto;
-    color: #505050;
-}
-
-.title {
-    font-size: 3.2vw;
-    font-weight: bolder;
-}
-
-.schedule {
-    font-size: 2.5vw;
-}
 
 @media screen and (max-width: 520px) {
-    header {
-        max-width: 520px;
-    }
     .wrapper {
         max-width: 520px;
     }
