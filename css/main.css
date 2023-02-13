@@ -204,8 +204,8 @@ header {
 }
 
 .top_logo img {
-    width: 352px;
-    height: 329.85px;
+    width: 100%;
+    height: auto;
 }
 
 .top_text {
@@ -227,7 +227,7 @@ header {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 3vw;
     
     color: #FFFFFF;
     
@@ -242,7 +242,7 @@ header {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     line-height: 5vh;
     
     padding-top: 4%;
@@ -258,7 +258,7 @@ header {
 }
 
 .schedule span {
-    font-size: 1.6em;
+    font-size: 2vw;
 }
 
 /* あいさつ */
