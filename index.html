@@ -28,13 +28,13 @@
         <!-- メニュー -->
         <nav><a href="#"></a>
             <ul class="menu">
-                <li class="menu_item"><a href="#">TOP</a></li>
-                <li class="menu_item"><a href="#">メッセージ</a></li>
+                <li class="menu_item"><a href="#top">TOP</a></li>
+                <li class="menu_item"><a href="#message">メッセージ</a></li>
                 <li class="menu_item"><a href="#">開催概要</a></li>
-                <li class="menu_item"><a href="#">デザイン工学部</a></li>
-                <li class="menu_item"><a href="#">研究室紹介</a></li>
+                <li class="menu_item"><a href="#design_introduction">デザイン工学部</a></li>
+                <li class="menu_item"><a href="#lab_introduction">研究室紹介</a></li>
                 <li class="menu_item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaDD6F-Z-KdYMGes7xEhENpcf3slq3hUsJNsj6fpdWOwKnlQ/viewform" target="_blank" rel="noopener noreferrer">来場予約フォーム</a></li>
-                <li class="menu_item"><a href="#">アクセス</a></li>
+                <li class="menu_item"><a href="#access">アクセス</a></li>
             </ul>
         </nav>
         <!-- Twitter -->
@@ -57,7 +57,7 @@
         </a>
 
         <!-- TOP -->
-        <section class="top">
+        <section class="top" id="top">
             <div class="top_frame">
                 <div class="top_logo">
                     <img src="image/logo.png" alt="ロゴ">
@@ -75,8 +75,8 @@
         </section>
 
         <!-- 挨拶 -->
-        <section class="theme">
-            <div class="theme_frame">
+        <section class="message" id="message">
+            <div class="message_frame">
                 <h2>かさねる</h2>
                 <h3>「私が取り組んだデザインとは？」</h3>
                 <p>学生はそれぞれの答えを見つけ 自らの進む道を切り開いてきました<br>
@@ -94,14 +94,14 @@
         </section> -->
 
         <!-- デザ工紹介 -->
-        <section class="design_introduction">
+        <section class="design_introduction" id="design_introduction">
             <div class="design_frame">
                 <span class="contents_title">デザイン工学部</span>
             </div>
         </section>
 
         <!-- 研究室紹介 -->
-        <section class="lab_introduction">
+        <section class="lab_introduction" id="lab_introduction">
             <div class="delimiter" id="re-delimiter"></div>
             <div class="lab_frame">
                 <span class="contents_title">研究室紹介</span>
@@ -151,7 +151,7 @@
         </section>
 
         <!-- アクセスとか -->
-        <section class="access">
+        <section class="access" id="access">
             <div class="delimiter" id="ac-delimiter"></div>
             <div class="access_frame">
                 <span class="contents_title">アクセス</span>
@@ -187,5 +187,8 @@
         </div>
     </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -239,7 +239,7 @@ header {
 }
 
 /* あいさつ */
-.theme {
+.message {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -251,13 +251,13 @@ header {
     margin: 0 auto;
 }
 
-.theme_frame {
+.message_frame {
     width: 66.7%;   /* 725px */
     margin: 0 auto;
     padding-left: 5%;
 }
 
-.theme_frame h2 {
+.message_frame h2 {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: bold;
@@ -269,7 +269,7 @@ header {
     color: #FFFFFF;
 }
 
-.theme_frame h3 {
+.message_frame h3 {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 300;
@@ -281,7 +281,7 @@ header {
     color: #FFFFFF;
 }
 
-.theme_frame p {
+.message_frame p {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 300;
@@ -291,7 +291,7 @@ header {
     color: #FFFFFF;
 }
 
-.theme_frame span {
+.message_frame span {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: bold;
@@ -436,7 +436,7 @@ header {
     align-items: center;
 
     padding: 92px 0px 0px;    
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
     background-color: #FFFFFF;
 
@@ -463,14 +463,14 @@ header {
     padding: 0px 96px;
     gap: 32px;
 
-    width: 77.78%;    /* width: 1120px; */
-    height: 448px;
+    width: 80.78%;    /* width: 1120px; */
+    height: 438px;
 }
 
 .access_contents img {
     /* width: 448px; */
     /* height: 448px; */
-    width: 31.11%;
+    width: 38.11%;
     height: auto;
 }
 
@@ -481,8 +481,10 @@ header {
     align-items: flex-start;
     padding: 0px;
     
-    width: 544px;
+    width: 554px;
+    /* width: 50.8%; */
     height: 364px;
+    /* height: 44.8%; */
 
     color: #000000;
 }
@@ -492,23 +494,23 @@ header {
     font-style: normal;
     font-weight: 400;
     font-size: 19px;
-    line-height: 29px;
+    line-height: 27px;
 }
 
 .campus{
     font-family: 'Noto Sans JP';
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
-    line-height: 35px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
 }
 
 .place{
     font-family: 'Noto Sans JP';
-    font-size: 36px;
+    font-size: 33px;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -602,7 +604,7 @@ footer {
 }
 
 .reserve_btn:hover {
-    opacity: 50%;
+    opacity: 70%;
 }
 
 
