@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    max-width: 1440px;
+
 }
 
 /* .wrapper {
@@ -564,12 +564,12 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    /* padding: 16px; */
 
     position: fixed;
     width: 46px;
     height: 261.14px;
-    top: 15%;
+    top: 148px;
     right: 0;
 
     background: #FFFFFF;
@@ -577,16 +577,28 @@ footer {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     border-radius: 8px 0px 0px 8px;
 
-    display: inline-block;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-
-    font-size: 8%;
-    letter-spacing: 1em;
+    /*font-size: 8%;
+    
     text-align: justify;
-    white-space: nowrap;
+    white-space: nowrap; */
 
     cursor: pointer;
+}
+
+.reserve_btn span {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+
+    writing-mode: vertical-rl;
+    letter-spacing: 4px;
+    
+    color: transparent;
+    background-image: url(../image/text_mask.png);
+    background-size: cover;
+    -webkit-background-clip: text;
+
 }
 
 .reserve_btn:hover {
