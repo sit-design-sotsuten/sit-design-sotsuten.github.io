@@ -1,15 +1,15 @@
 /* モバイルファースト? PCファースト? */
 /* とりあえずPCファースト */
 
-/* .wrapper {
-    height: 4590px;
-} */
-
 body{
     margin: 0;
     padding: 0;
+    max-width: 1440px;
 }
 
+/* .wrapper {
+    width: 1440px;
+} */
 /* ヘッダー */
 header {
     position: fixed;
@@ -118,25 +118,31 @@ header {
 }
 /*  ヘッダー */
 
+/* セクション */
+/* section {
+    height: 810px;
+} */
+/* セクション */
+
 /* 区切り線 */
 .delimiter {
-    position: fixed;
     width: 100%;
+    height: 4px;
     left: 0px;
 
     background-image: url(../image/bar.png);
 }
 
 #header-delimiter {
+    position: fixed;
     top: 11.4%;
-    height: 0.49%;
 }
 /* 区切り線 */
 
 /* コンテンツ */
 .contents {
     width: 100%;
-    height: 4590px;
+    height: auto;
     top: 0;
     left: 0;    
 }
@@ -155,33 +161,24 @@ header {
     object-fit: cover;
 }
 
-.page {
-    height: 810px;
-}
-
 .top {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    
-    position: relative;
-    margin: 0 auto;
-    width: 53.33%;
-    top: 30.1%;
-    height: 52vh;
-    /* left: 22.44%; */
+    height: 730px;
 }
 
 .top_frame {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0px;
+    margin: 15.77% auto 0;  /* header-top 152px */
+    gap: 2.22%;    /* gap: 32px; */
 
-    margin: 0 auto;
-    margin-left: 5%;
-    width: 100%;
-    height: 85%;
+    width: 53.33%;  /* width: 768px; */
+    height: auto;    /* height: 352px; */
 }
 
 .top_logo {
@@ -194,13 +191,7 @@ header {
     align-items: center;
     padding: 0px;
 
-    width: 40%;
-    height: 89.7%;
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    width: 45.83%;  /* 352px */
 }
 
 .top_logo img {
@@ -214,8 +205,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    width: 60%;
-    height: 89.7%;
+    width: 50%; /* 384px */
 }
 
 .top_text ul {
@@ -227,38 +217,25 @@ header {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 46px;
     
     color: #FFFFFF;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .schedule {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.5vw;
-    line-height: 5vh;
-    
-    padding-top: 4%;
-    margin: 0 auto;
+    font-size: 24px;
+    line-height: 4.44%;    /* line-height: 36px; */
+
+    margin: 2% auto 0;   /* top_frame-schedule 8px; */
 
     color: #FFFFFF;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .schedule span {
-    font-size: 2vw;
+    font-size: 36px;
 }
 
 /* あいさつ */
@@ -269,13 +246,13 @@ header {
     align-items: center;
     padding: 3% 0px 0px;
 
-    width: 77.78%;
+    width: 77.78%;  /* 1120px */
     height: 810px;
     margin: 0 auto;
 }
 
 .theme_frame {
-    width: 64.7%;
+    width: 66.7%;   /* 725px */
     margin: 0 auto;
     padding-left: 5%;
 }
@@ -326,14 +303,257 @@ header {
 /* あいさつ */
 
 /* デザ紹介 */
-.course_introduction {
+.design_introduction {
     background-color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 92px 0px 0px;    /* padding: 92px 0px 0px; */
+    gap: 32px;
+
+    align-self: stretch;
+
     width: 100%;
-    height: 810px;
+    height: 700px;
 }
+
+.design_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px; /* 64px */
+    gap: 48px;
+
+    width: 77.78%;    /* 1120px;*/
+    height: 93px;    /* 93px; */
+
+    margin: 0 auto;     /* 92px 160px 625px */
+}
+
+.contents_title {
+    /* width: 9.72%;    /*140px*/
+    /* height: 3.58%;   /* 29px */
+    margin: 0 auto;
+    
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+
+    /* identical to box height */
+    
+    color: #000000;
+}
+
 /* デザ紹介 */
 
+/* 研究室紹介 */
+#re-delimiter {
+    top: auto;
+}
+
+.lab_introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 92px 0px 0px;    
+    margin: 0 auto;
+
+    background-color: #FFFFFF;
+
+    width: 100%;
+    height: 800px;
+
+    align-self: stretch;
+}
+
+.lab_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px 0px;
+    gap: 32px;
+
+    margin: 0 auto;
+
+    /* width: 1120px; */
+    height: 701.03px;
+}
+
+.labs {
+    margin: 0 auto;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.lab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 256px;
+    height: 300.01px;
+
+    padding: 0 16px;
+}
+
+.lab_img {
+    width: 224px;
+    height: 224px;
+    top: 0;
+}
+
+.lab_back {
+    width: 256px;
+    height: 122.01px;
+
+    position: relative;
+    top: -70px;
+}
+
+.lab_name {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    
+    color: #000000;
+
+    position: relative;
+    top: -140px;
+}
+/* 研究室紹介 */
+
+/* アクセス */
+.access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 92px 0px 0px;    
+    margin: 0 auto;
+
+    background-color: #FFFFFF;
+
+    width: 100%;
+
+    align-self: stretch;
+}
+
+.access_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px 0px;
+    
+    width: 1120px;
+    height: 573px;
+}
+
+.access_contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 96px;
+    gap: 32px;
+
+    width: 77.78%;    /* width: 1120px; */
+    height: 448px;
+}
+
+.access_contents img {
+    /* width: 448px; */
+    /* height: 448px; */
+    width: 31.11%;
+    height: auto;
+}
+
+.access_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 544px;
+    height: 364px;
+
+    color: #000000;
+}
+
+.access_info p {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 29px;
+}
+
+.campus{
+    font-family: 'Noto Sans JP';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.place{
+    font-family: 'Noto Sans JP';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* アクセス */
 /* コンテンツ */
+
+
+/* フッダー */
+footer {
+    width: 100%;
+    height: 340px;
+}
+
+.footer_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 70%;
+
+    position: relative;
+    left: 160px;
+    top: 50px;
+}
+
+.footer_frame p {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+}
+
+.footer_frame img {
+    width: 541.82px;
+    height: 60px;
+
+    position: relative;
+    top: 86px;
+}
+/* フッダー */
 
 .reserve_btn {
     /* 予約フォーム */
