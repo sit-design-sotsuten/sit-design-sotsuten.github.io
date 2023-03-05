@@ -66,12 +66,13 @@ header {
     white-space: nowrap;
     font-family: 'Noto Sans JP';
     font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
 }
 
 .menu_item a {
-    color: black;
+    color: #595757;
     text-decoration: none;
     cursor: pointer;
 }
@@ -198,7 +199,7 @@ header {
     align-items: center;
     padding: 0px;
 
-    width: 45.83%;  /* 352px */
+    width: 44.83%;  /* 352px */
 }
 
 .top_logo img {
@@ -212,7 +213,12 @@ header {
     justify-content: center;
     align-items: center;
 
-    width: 50%; /* 384px */
+    width: 49.7%; /* 384px */
+}
+
+.top_text img{
+    width: 100%;
+    height: auto;
 }
 
 .top_text ul {
@@ -224,7 +230,7 @@ header {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 46px;
+    font-size: 42px;
     
     color: #FFFFFF;
 }
@@ -233,7 +239,7 @@ header {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 4.44%;    /* line-height: 36px; */
 
     margin: 2% auto 0;   /* top_frame-schedule 8px; */
@@ -241,61 +247,91 @@ header {
     color: #FFFFFF;
 }
 
-.schedule span {
+.schedule span.date{
     font-size: 36px;
+    font-weight: 600;
+}
+
+.schedule span.time{
+    font-size: 24px;
+    font-weight: 600;
 }
 
 /* あいさつ */
 .message {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3% 0px 0px;
 
-    width: 77.78%;  /* 1120px */
+    width: 100%;  /* 1440px */
     height: 810px;
     margin: 0 auto;
 }
 
 .message_frame {
-    width: 66.7%;   /* 725px */
+    width: 51.1%;   /* 736px */
+    height: 45%;  /* 516-128px */
+
     margin: 0 auto;
-    padding-left: 5%;
+    padding: 64px 0;
+
+    display: inline-block;
+    text-align: center;
+
+    /* padding-left: 5%; */
+
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);    
+}
+
+.message_frame h6 {
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+
+    margin: 0 0 16px 0;
+
+    color: #999999;
 }
 
 .message_frame h2 {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 60px;
-    /* identical to box height */
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
 
+    margin: 0 0 16px 0;
 
-    color: #FFFFFF;
+    color: #27378E;
 }
 
 .message_frame h3 {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 36px;
-    /* identical to box height */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
 
-
-    color: #FFFFFF;
+    margin: 20px 0;
+    
+    color: #27378E;
 }
 
 .message_frame p {
     font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 28px;
+    
+    margin: 20px 0;
 
-    color: #FFFFFF;
+    color: rgba(89, 87, 87, 1);
 }
 
 .message_frame span {
@@ -309,56 +345,22 @@ header {
 }
 /* あいさつ */
 
-/* デザ紹介 */
-.design_introduction {
-    background-color: #FFFFFF;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 92px 0px 0px;    /* padding: 92px 0px 0px; */
-    gap: 32px;
-
-    align-self: stretch;
-
-    width: 100%;
-    height: 700px;
-}
-
-.design_frame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 64px; /* 64px */
-    gap: 48px;
-
-    width: 77.78%;    /* 1120px;*/
-    height: 93px;    /* 93px; */
-
-    margin: 0 auto;     /* 92px 160px 625px */
-}
+/* 研究室紹介 */
+/* #re-delimiter {
+    top: auto;
+} */
 
 .contents_title {
-    /* width: 9.72%;    /*140px*/
-    /* height: 3.58%;   /* 29px */
-    margin: 0 auto;
-    
-    font-family: 'Noto Sans JP';
+    font-family: 'Hiragino Kaku Gothic Pro';
     font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
 
-    /* identical to box height */
+    padding-bottom: 64px;
     
-    color: #000000;
-}
-
-/* デザ紹介 */
-
-/* 研究室紹介 */
-#re-delimiter {
-    top: auto;
+    color: #27378E;
 }
 
 .lab_introduction {
@@ -366,13 +368,13 @@ header {
     flex-direction: column;
     align-items: center;
 
-    padding: 92px 0px 0px;    
+    padding: 64px 0px 0px;    
     margin: 0 auto;
 
     background-color: #FFFFFF;
 
     width: 100%;
-    height: 800px;
+    height: 1209px;
 
     align-self: stretch;
 }
@@ -381,8 +383,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 0px 0px;
-    gap: 32px;
 
     margin: 0 auto;
 
@@ -393,8 +393,9 @@ header {
 .labs {
     margin: 0 auto;
     padding-left: 0;
+    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .lab {
@@ -402,38 +403,66 @@ header {
     flex-direction: column;
     align-items: center;
 
-    width: 256px;
-    height: 300.01px;
+    width: 320px;
+    height: 300px;
+    /* height: 300.01px; */
 
-    padding: 0 16px;
+    padding: 0 32px;
 }
 
 .lab_img {
     width: 224px;
     height: 224px;
     top: 0;
+
+    z-index: 5;
 }
 
-.lab_back {
-    width: 256px;
-    height: 122.01px;
+.lab div {
+    width: 224px;
+    height: 224px;
+    /* transform: rotate(5deg); */
+
+    display: inline-block;
 
     position: relative;
-    top: -70px;
+    top: -215px;
+    left: 10px;
 }
 
-.lab_name {
-    font-family: 'Noto Sans JP';
+.lab span {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 19px;
     
-    color: #000000;
+    color: #FFFFFF;
 
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+
+    padding: 5px 0;
+    
+    width: 320px;
+    
     position: relative;
-    top: -140px;
+    top: -212px;
+
 }
+
+.lab_hashida { background: #E6508D;}
+.lab_yan { background: rgba(218, 79, 78, 1);}
+.lab_yoshitake { background: rgba(222, 136, 79, 1);}
+.lab_yamazaki { background: rgba(126, 189, 61, 1);}
+.lab_sasaki { background: rgba(59, 172, 98, 1);}
+.lab_shimizu { background: rgba(82, 191, 209, 1);}
+.lab_shigiri { background: rgba(80, 122, 185, 1);}
+.lab_ashizawa { background: rgba(112, 83, 160, 1);}
+
+
+
 /* 研究室紹介 */
 
 /* アクセス */
