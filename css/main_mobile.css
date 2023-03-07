@@ -425,14 +425,14 @@
         background-color: #FFFFFF;
     
         width: 100%;
-        height: 865.29px;
+        height: auto;
     }
     
     .access_frame {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 48px 0px 0px;
+        padding: 48px 0px;
     }
     
     .access_contents {
@@ -450,47 +450,8 @@
         width: 100%;
         height: auto;
     }
-    
-    .access_info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 0px;
-        
-        width: 554px;
-        /* width: 50.8%; */
-        height: 364px;
-        /* height: 44.8%; */
-    
-        color: #000000;
-    }
-    
-    .access_info p {
-        font-family: 'Noto Sans JP';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 27px;
-    }
-    
-    .campus{
-        font-family: 'Noto Sans JP';
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 30px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-    
-    .place{
-        font-family: 'Noto Sans JP';
-        font-size: 33px;
-        font-weight: 700;
-        line-height: 50px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
+    .access_contents img.ac_pc {display: none;}
+    .access_contents img.ac_mb {display: inline;}
     
     /* アクセス */
     /* コンテンツ */
@@ -499,38 +460,37 @@
     /* フッダー */
     footer {
         width: 100%;
-        height: 340px;
+        height: 146px;
     }
     
     .footer_frame {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-    
-        width: 70%;
-    
-        position: relative;
-        left: 160px;
-        top: 50px;
+        align-items: center;
+
+        top: 0;
+        left: 0;
+
+        padding: 8px 0px 16px 8.5%;
     }
     
     .footer_frame p {
         font-family: 'Noto Sans JP';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 10px;
+        line-height: 20px;
+        white-space: nowrap;
         
         color: #FFFFFF;
     }
     
     .footer_frame img {
-        width: 541.82px;
-        height: 60px;
+        width: 270.91px;
+        height: 30px;
     
         position: relative;
-        top: 86px;
+        top: 24px;
     }
     /* フッダー */
     
@@ -546,15 +506,15 @@
         /* padding: 16px; */
     
         position: fixed;
-        width: 46px;
-        height: 261.14px;
-        top: 148px;
-        right: 0;
+        width: 80px;
+        height: 80px;
+        top: 690px;
+        right: 2%;
     
         background: #FFFFFF;
         text-decoration: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-        border-radius: 8px 0px 0px 8px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
     
         /*font-size: 8%;
         
@@ -562,6 +522,13 @@
         white-space: nowrap; */
     
         cursor: pointer;
+    }
+
+    .reserve_btn span {display: none;}
+    .reserve_btn img {
+        display: inline;
+        width: 56px;
+        height: 27.42px;
     }
     
     .reserve_btn span {
