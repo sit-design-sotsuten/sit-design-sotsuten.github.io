@@ -449,6 +449,13 @@ header {
     top: -5px;
 
 }
+.lab span:hover {
+    background: white;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
 .lab_hashida { background: #E6508D;}
 .lab_yan { background: rgba(218, 79, 78, 1);}
@@ -459,7 +466,14 @@ header {
 .lab_shigiri { background: rgba(80, 122, 185, 1);}
 .lab_ashizawa { background: rgba(112, 83, 160, 1);}
 
-
+.lab_hashida:hover { color: #E6508D; border-color: #E6508D;}
+.lab_yan:hover { color: rgba(218, 79, 78, 1); border-color: rgba(218, 79, 78, 1);}
+.lab_yoshitake:hover { color: rgba(222, 136, 79, 1); border-color: rgba(222, 136, 79, 1);}
+.lab_yamazaki:hover { color: rgba(126, 189, 61, 1); border-color: rgba(126, 189, 61, 1);}
+.lab_sasaki:hover { color: rgba(59, 172, 98, 1); border-color: rgba(59, 172, 98, 1);}
+.lab_shimizu:hover { color: rgba(82, 191, 209, 1); border-color: rgba(82, 191, 209, 1);}
+.lab_shigiri:hover { color: rgba(80, 122, 185, 1); border-color: rgba(80, 122, 185, 1);}
+.lab_ashizawa:hover { color: rgba(112, 83, 160, 1); border-color: rgba(112, 83, 160, 1);}
 
 /* 研究室紹介 */
 
