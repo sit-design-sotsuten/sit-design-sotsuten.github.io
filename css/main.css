@@ -428,6 +428,10 @@ header {
     left: 10px;
 }
 
+.lab br {
+    display: none;
+}
+
 .lab span {
     font-family: 'Inter';
     font-style: normal;
