@@ -374,7 +374,7 @@ header {
     background-color: #FFFFFF;
 
     width: 100%;
-    height: 1209px;
+    height: 1145px;
 
     align-self: stretch;
 }
@@ -404,18 +404,16 @@ header {
     align-items: center;
 
     width: 320px;
-    height: 300px;
+    height: 263px;
     /* height: 300.01px; */
 
-    padding: 0 32px;
+    padding: 0 24px 96px;
 }
 
 .lab_img {
     width: 224px;
     height: 224px;
     top: 0;
-
-    z-index: 5;
 }
 
 .lab div {
@@ -448,7 +446,7 @@ header {
     width: 320px;
     
     position: relative;
-    top: -212px;
+    top: -5px;
 
 }
 
@@ -477,8 +475,7 @@ header {
     background-color: #FFFFFF;
 
     width: 100%;
-
-    align-self: stretch;
+    height: 865.29px;
 }
 
 .access_frame {
@@ -486,9 +483,6 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 48px 0px 0px;
-    
-    width: 1120px;
-    height: 573px;
 }
 
 .access_contents {
@@ -496,17 +490,14 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 96px;
-    gap: 32px;
 
     width: 80.78%;    /* width: 1120px; */
-    height: 438px;
 }
 
 .access_contents img {
     /* width: 448px; */
     /* height: 448px; */
-    width: 38.11%;
+    width: 100%;
     height: auto;
 }
 
