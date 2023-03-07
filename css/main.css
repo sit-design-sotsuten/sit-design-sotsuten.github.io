@@ -41,6 +41,8 @@ header {
 .logo img {
     width: 60px;
     height: 60px;
+
+    cursor: pointer;
 }
 
 .menu {
@@ -634,10 +636,11 @@ footer {
     cursor: pointer;
 }
 
-.reserve_btn span {display: inline;}
 .reserve_btn img {display: none;}
 
 .reserve_btn span {
+    display: inline;
+
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: bold;

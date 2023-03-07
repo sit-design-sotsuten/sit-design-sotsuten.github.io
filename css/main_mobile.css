@@ -43,6 +43,8 @@
     .logo img {
         width: 60px;
         height: 60px;
+
+        cursor: pointer;
     }
     
     .menu {
@@ -128,7 +130,7 @@
         z-index: -1;
     
         width: 100%;
-        height: 810px;
+        height: 100%;
         object-fit: cover;
     }
     
@@ -508,7 +510,7 @@
         position: fixed;
         width: 80px;
         height: 80px;
-        top: 690px;
+        top: 85.1%;
         right: 2%;
     
         background: #FFFFFF;
@@ -529,22 +531,6 @@
         display: inline;
         width: 56px;
         height: 27.42px;
-    }
-    
-    .reserve_btn span {
-        font-family: 'Noto Sans JP';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-    
-        writing-mode: vertical-rl;
-        letter-spacing: 4px;
-        
-        color: transparent;
-        background-image: url(../image/text_mask.png);
-        background-size: cover;
-        -webkit-background-clip: text;
-    
     }
     
     .reserve_btn:hover {
