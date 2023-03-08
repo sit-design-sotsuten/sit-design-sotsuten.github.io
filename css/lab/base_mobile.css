@@ -10,23 +10,121 @@
     }
     
     /* ヘッダー */
-    .hashida { background: #E6508D;}
-    .yan { background: rgba(218, 79, 78, 1);}
-    .yoshitake { background: rgba(222, 136, 79, 1);}
-    .yamazaki { background: rgba(126, 189, 61, 1);}
-    .sasaki { background: rgba(59, 172, 98, 1);}
-    .shimizu { background: rgba(82, 191, 209, 1);}
-    .shigeri { background: rgba(80, 122, 185, 1);}
-    .ashizawa { background: rgba(112, 83, 160, 1);}
-    
     header {
+        position: fixed;
+        width: 100%;
+        /* height: 11.4%; */
+        height: 92px;
+        top: 0%;
+        left: 0%;
+    
+        background: #FFFFFF;
+    
+        z-index: 10;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        /* left: 1.17%; */
+        /* top: 11.39%; */
+    }
+    
+    .logo img {
+        width: 60px;
+        height: 60px;
+
+        cursor: pointer;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .twitter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        /* left: 236px; */
+        left: 63.7%;
+        top: 16px;
+    }
+    
+    .twitter img {
+        width: 30px;
+        height: 24.69px;
+        
+        cursor: pointer;
+    }
+    
+    .instagram {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        /* left: 299px; */
+        left: 79.76%;
+        top: 16px;
+    }
+    
+    .instagram img {
+        width: 30px;
+        height: 29.99px;
+    
+        cursor: pointer;
+    }
+    /*  ヘッダー */
+    
+    
+    /* 区切り線 */
+    .delimiter {
+        width: 100%;
+        height: 2px;
+        left: 0px;
+    
+        position: fixed;
+        top: 92px;
+
+        z-index: 5;
+    }
+    /* 区切り線 */
+
+    #hashida { background: #E6508D;}
+    #yan { background: rgba(218, 79, 78, 1);}
+    #yoshitake { background: rgba(222, 136, 79, 1);}
+    #yamazaki { background: rgba(126, 189, 61, 1);}
+    #sasaki { background: rgba(59, 172, 98, 1);}
+    #shimizu { background: rgba(82, 191, 209, 1);}
+    #shigeri { background: rgba(80, 122, 185, 1);}
+    #ashizawa { background: rgba(112, 83, 160, 1);}
+    
+    .research {
+        position: relative;
+        top:92px;
         width: 100%;
         height: 408px;
     
-        top: 0px;
-        left: 0px;
-    
         color: white;
+
+        z-index: 8;
     }
     
     .header-decoration {
@@ -60,7 +158,7 @@
         padding: 96px 0;
     }
 
-    header img {
+    .research img {
         position: absolute;
         top: 0px;
         right: 0px;
@@ -69,7 +167,7 @@
         height: auto;
     }
     
-    header h1 {
+    .research h1 {
         width: auto;
         height: 46px;
     
@@ -82,7 +180,7 @@
         line-height: 46px;
     }
     
-    header h2 {
+    .research h2 {
         width: 311px;
         height: auto;
     
@@ -95,9 +193,9 @@
         line-height: 20px;
     }
 
-    header br.adjustment {display: none;}
+    .research br.adjustment {display: none;}
     
-    header h3 {
+    .research h3 {
         position: relative;
         top: 0px;
 
@@ -114,7 +212,7 @@
         letter-spacing: 0.06em;
     }
     
-    header p {
+    .research p {
         position: relative;
         top: 0px;
 
@@ -133,6 +231,8 @@
     
     /* メインコンテンツ */
     .labs {
+        position: relative;
+        top:92px;        
         width: 100%;
         height: auto;
     
@@ -141,6 +241,8 @@
         
         display: grid;
         grid-template-columns: 1fr;
+
+        z-index: 1;
     }
     
     .lab {
