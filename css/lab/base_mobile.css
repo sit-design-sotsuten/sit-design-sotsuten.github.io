@@ -83,8 +83,8 @@
     }
     
     header h2 {
-        width: 196px;
-        height: 40px;
+        width: 311px;
+        height: auto;
     
         margin: 0px;
     
@@ -94,6 +94,8 @@
         font-size: 14px;
         line-height: 20px;
     }
+
+    header br.adjustment {display: none;}
     
     header h3 {
         position: relative;
@@ -102,7 +104,7 @@
         margin-top: 32px;
 
         width: 311px;
-        height: 34px;
+        height: auto;
     
         font-family: 'Noto Sans JP';
         font-style: normal;
@@ -117,7 +119,7 @@
         top: 0px;
 
         width: 311px;
-        height: 98px;
+        height: auto;
     
         font-family: 'Noto Sans JP';
         font-style: normal;

@@ -32,6 +32,8 @@ header {
     color: white;
 }
 
+header br.adjustment {display: inline;}
+
 .header-decoration {
     width: 264px;
     height: 96px;
