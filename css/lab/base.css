@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+.hashida {
+    background: #E6508D;
+}
+
+header {
+    width: 100%;
+    height: 384px;
+
+    top: 0px;
+    left: 0px;
+
+    color: white;
+}
+
+.header-decoration {
+    width: 264px;
+    height: 96px;
+    
+    background: rgba(255, 255, 255, 0.34);    
+}
+
+#box1 {
+    position: absolute;
+    right: 2%;
+    top: -60px;
+
+    transform: rotate(10deg);
+}
+
+#box2 {
+    position: absolute;
+    right: -6%;
+    top: -38px;
+
+    transform: rotate(45deg);
+}
+
+.header-info {
+    width: 78.1%;
+    height: 238px;
+
+    margin: 0 auto 1%;
+    padding: 83px 0;
+}
+
+header h1 {
+    position: relative;
+
+    width: 287px;
+    height: 93px;
+
+    margin: 0px;
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 93px;
+}
+
+header h2 {
+    width: 336px;
+    height: 70px;
+
+    margin: 0px;
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+header h3 {
+    position: relative;
+    top: -89px;
+
+    width: 63%;
+    height: 29px;
+
+    margin-right: 0px;
+    margin-left: auto;
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.06em;
+}
+
+header p {
+    position: relative;
+    top: -89px;
+
+    width: 63%;
+    height: 100px;
+
+    margin-right: 0px;
+    margin-left: auto;    
+
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+}
+/* ヘッダー */
+
+
+/* メインコンテンツ */
+.labs {
+    width: 1120px;
+    height: auto;
+
+    margin: 32px auto 0px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lab {
+    width: 288px;
+    height: auto;
+
+    padding: 16px 32px;
+    margin-bottom: 64px;
+
+    list-style: none;
+}
+
+.lab:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.lab img {
+    width: 288px;
+    height: auto;
+    
+    background-blend-mode: luminosity, normal;
+}
+
+.lab h3 {
+    width: 288px;
+    height: auto;
+    
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.08em;
+    
+    color: #595757;
+}
+
+.lab h3.subtitle {
+    margin-bottom: 0px;
+}
+
+.lab h4 {
+    width: 288px;
+    height: auto;
+
+    margin-top: 0px;
+    
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: #666666;
+}
+
+.lab span {
+    width: 288px;
+    height: auto;
+    
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: #666666;
+}
+/* メインコンテンツ */
+@media screen and (max-width: 520px) {
+    .wrapper {
+        max-width: 520px;
+    }
+}

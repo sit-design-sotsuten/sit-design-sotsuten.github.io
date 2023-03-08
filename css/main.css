@@ -412,6 +412,16 @@ header {
     padding: 0 24px 96px;
 }
 
+.lab a {
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .lab_img {
     width: 224px;
     height: 224px;
