@@ -42,11 +42,20 @@ header {
 }
 
 .header-info {
-    width: 78.1%;
+    width: 1126px;
     height: 238px;
 
     margin: 0 auto 1%;
     padding: 83px 0;
+}
+
+header img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 307px;
+    height: 121px;
 }
 
 header h1 {
