@@ -355,9 +355,25 @@ header {
     
     color: #666666;
 }
-/* メインコンテンツ */
-@media screen and (max-width: 520px) {
-    .wrapper {
-        max-width: 520px;
-    }
+
+/* 研究詳細 */
+.details {
+    width: 928px;
+    height: 716px;    
 }
+
+.details h1 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+
+    color: #595957;    
+}
+
+.details img{
+    width: 768px;
+    height: 252.51px;    
+}
+/* 研究詳細 */
