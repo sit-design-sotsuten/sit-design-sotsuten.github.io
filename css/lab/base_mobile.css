@@ -313,4 +313,259 @@
         
         color: #666666;
     }
+
+    /* 研究詳細 */
+    .details {
+        width: 100%;
+        height: 557.91px;
+        margin: 0 auto;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .details ul {
+        list-style: none;
+    }
+
+    /* .close_button {
+        position: relative;
+        left: calc(100% - 48px);
+    }
+
+    .close_button img{
+        width: 48px;
+        height: 48px;
+    } */
+
+    .details h1 {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+
+        color: #595957;
+        
+        margin: 0px auto 16px;
+    }
+
+    .de_imgs {
+        width: 256px;
+        height: 84.17px;  
+    }
+
+    .de_imgs img {
+        width: 256px;
+        height: 84.17px;
+
+        position: relative;
+        /* z-index: 15; */
+    }
+
+    .under_img {
+        display: none;
+    }
+
+    .details h3 {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        
+        color: #595757;    
+    }
+
+    .details h4 {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 16px;
+        
+        color: #595757;     
+
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .de_line {
+        width: 256px;
+        height: 1px;
+
+        margin: 16px 0px;
+
+        /* background: #E6508D; */
+    }
+
+    .de_context {
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        padding: 0px;
+        
+        width: 256px;
+        height: 250px;        
+    }
+
+    .de_context p {
+        width: 256px;
+        height: 140px;
+
+        margin: 0;
+        
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        /* or 229% */
+        
+        letter-spacing: 0.025em;
+        
+        color: #666666;
+
+        padding: 0px 32px 0px 0px;
+    }
+
+    .de_comment {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 16px;
+        
+        width: 256px;
+        height: 94px;
+    }
+
+    .de_tai{
+        width: 167.27px;
+        height: 27px;   
+    }
+
+    .de_tai img {
+        width: 167.27px;
+        height: 27px;
+    }
+
+    .de_tai span {
+        position: relative;
+        top: -21px;
+        padding-left: 13px;
+
+        font-family: 'Source Han Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 14px;
+        
+        color: #FFFFFF;
+    }
+
+    .de_comment p {
+        font-family: 'Source Han Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 170%;
+        /* or 20px */
+        
+        letter-spacing: 0.29em;
+        
+        /* color: #E6508D; */
+
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    /* 研究詳細 */
+
+    /* モーダル */
+    #hide_area{
+        display: none;
+    }
+
+    .modaal-container {
+        width: 304px;
+        height: 557.91px;
+    }
+
+    .modaal-content-container {
+        /* padding: 24px 64px; */
+        height: auto;
+        padding: 24px;
+    }
+
+    .modaal-content-container h1 {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        
+        color: #595957;
+    }
+
+    .modaal-content-container .de_context p {
+        font-family: 'Source Han Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 170%;
+        /* or 20px */
+        
+        letter-spacing: 0.29em;
+        
+        /* color: #E6508D; */
+
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 16px 0px;       
+    }
+
+    .modaal-content-container h3 {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        
+        color: #595757;      
+    }
+
+    .modaal-content-container h3.subtitle {
+        margin-bottom: 0px;
+    }
+
+    .modaal-content-container h4 {
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 20px;
+        
+        color: #595757;  
+        margin-top: 0px;
+    }
+
+    /* 色 */
+    #hashida { background: #E6508D;}
+    #yan { background: rgba(218, 79, 78, 1);}
+    #yoshitake { background: rgba(222, 136, 79, 1);}
+    #yamazaki { background: rgba(126, 189, 61, 1);}
+    #sasaki { background: rgba(59, 172, 98, 1);}
+    #shimizu { background: rgba(82, 191, 209, 1);}
+    #shigeri { background: rgba(80, 122, 185, 1);}
+    #ashizawa { background: rgba(112, 83, 160, 1);}
+
+    #hashida_color {color: #E6508D;}
+    #yan_color {color: rgba(218, 79, 78, 1);}
+    #yoshitake_color {color: rgba(222, 136, 79, 1);}
+    #yamazaki_color {color: rgba(126, 189, 61, 1);}
+    #sasaki_color {color: rgba(59, 172, 98, 1);}
+    #shimizu_color {color: rgba(82, 191, 209, 1);}
+    #shigeri_color {color: rgba(80, 122, 185, 1);}
+    #ashizawa_color {color: rgba(112, 83, 160, 1);}    
 }

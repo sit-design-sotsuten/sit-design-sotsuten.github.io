@@ -143,15 +143,6 @@ header {
 }
 /* 区切り線 */
 
-#hashida { background: #E6508D;}
-#yan { background: rgba(218, 79, 78, 1);}
-#yoshitake { background: rgba(222, 136, 79, 1);}
-#yamazaki { background: rgba(126, 189, 61, 1);}
-#sasaki { background: rgba(59, 172, 98, 1);}
-#shimizu { background: rgba(82, 191, 209, 1);}
-#shigeri { background: rgba(80, 122, 185, 1);}
-#ashizawa { background: rgba(112, 83, 160, 1);}
-
 .research {
     width: 100%;
     height: 384px;
@@ -298,6 +289,10 @@ header {
     list-style: none;
 }
 
+.lab a {
+    text-decoration: none;
+}
+
 .lab:hover {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -358,8 +353,27 @@ header {
 
 /* 研究詳細 */
 .details {
-    width: 928px;
-    height: 716px;    
+    width: 100%;
+    height: 716px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.details ul {
+    list-style: none;
+}
+
+.close_button {
+    position: relative;
+    left: calc(100% - 48px);
+}
+
+.close_button img{
+    width: 48px;
+    height: 48px;
 }
 
 .details h1 {
@@ -369,11 +383,207 @@ header {
     font-size: 40px;
     line-height: 58px;
 
-    color: #595957;    
+    color: #595957;
+    
+    margin: 0px auto 32px;
 }
 
-.details img{
+.de_imgs {
+    width: 800px;
+    height: 284.5px;    
+}
+
+.de_imgs img {
     width: 768px;
-    height: 252.51px;    
+    height: 252.51px;
+
+    position: relative;
+    z-index: 15;
+}
+
+.under_img {
+    width: 768px;
+    height: 252.5px;
+
+    position: relative;
+    top: -220px;
+    left: 32px;
+
+    /* background: #E6508D; */
+    opacity: 0.1;
+
+    z-index: 0;
+}
+
+.details h3 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    
+    color: #595757;    
+}
+
+.details h4 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    
+    color: #595757;     
+
+    margin-top: 0px;
+}
+
+.de_line {
+    width: 800px;
+    height: 1px;
+
+    margin: 24px 0px;
+
+    /* background: #E6508D; */
+}
+
+.de_context {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 800px;
+    height: 128px;
+}
+
+.de_context p {
+    width: 576px;
+    height: 128px;
+
+    margin: 0;
+    
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    /* or 229% */
+    
+    letter-spacing: 0.025em;
+    
+    color: #666666;
+
+    padding: 0px 32px 0px 0px;
+}
+
+.de_comment {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 224px;
+    height: 123px;
+}
+
+.de_tai{
+    width: 167.27px;
+    height: 27px;    
+}
+
+.de_tai img {
+    width: 167.27px;
+    height: 27px;
+}
+
+.de_tai span {
+    position: relative;
+    top: -21px;
+    padding-left: 13px;
+
+    font-family: 'Source Han Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #FFFFFF;
+}
+
+.de_comment p {
+    font-family: 'Source Han Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    /* or 20px */
+    
+    letter-spacing: 0.07em;
+    
+    /* color: #E6508D; */
+
+    width: 100%;
+    height: auto;
+    padding: 0px;
 }
 /* 研究詳細 */
+
+/* モーダル */
+#hide_area{
+    display: none;
+}
+
+.modaal-container {
+    width: 928px;
+    height: 720px;
+    padding-bottom: 24px;    
+}
+
+.modaal-content-container {
+    padding: 24px 64px;
+    height: auto;
+}
+
+.modaal-content-container h3 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    
+    color: #595757;      
+}
+
+.modaal-content-container h3.subtitle {
+    margin-bottom: 0px;
+}
+
+.modaal-content-container h4 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    
+    color: #595757;  
+    margin-top: 0px;
+}
+
+/* 色 */
+#hashida { background: #E6508D;}
+#yan { background: rgba(218, 79, 78, 1);}
+#yoshitake { background: rgba(222, 136, 79, 1);}
+#yamazaki { background: rgba(126, 189, 61, 1);}
+#sasaki { background: rgba(59, 172, 98, 1);}
+#shimizu { background: rgba(82, 191, 209, 1);}
+#shigeri { background: rgba(80, 122, 185, 1);}
+#ashizawa { background: rgba(112, 83, 160, 1);}
+
+#hashida_color {color: #E6508D;}
+#yan_color {color: rgba(218, 79, 78, 1);}
+#yoshitake_color {color: rgba(222, 136, 79, 1);}
+#yamazaki_color {color: rgba(126, 189, 61, 1);}
+#sasaki_color {color: rgba(59, 172, 98, 1);}
+#shimizu_color {color: rgba(82, 191, 209, 1);}
+#shigeri_color {color: rgba(80, 122, 185, 1);}
+#ashizawa_color {color: rgba(112, 83, 160, 1);}
