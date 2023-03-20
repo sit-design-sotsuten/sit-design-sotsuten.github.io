@@ -106,15 +106,6 @@
         z-index: 5;
     }
     /* 区切り線 */
-
-    #hashida { background: #E6508D;}
-    #yan { background: rgba(218, 79, 78, 1);}
-    #yoshitake { background: rgba(222, 136, 79, 1);}
-    #yamazaki { background: rgba(126, 189, 61, 1);}
-    #sasaki { background: rgba(59, 172, 98, 1);}
-    #shimizu { background: rgba(82, 191, 209, 1);}
-    #shigeri { background: rgba(80, 122, 185, 1);}
-    #ashizawa { background: rgba(112, 83, 160, 1);}
     
     .research {
         position: relative;

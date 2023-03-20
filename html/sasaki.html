@@ -11,8 +11,7 @@
     <!-- レスポンシブにするための設定? -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link href="../css/lab/base.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/lab/base_mobile.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -68,13 +67,13 @@
     <!-- コンテンツ -->
     <div class="contents">
         <ul class="labs">
-            <li class="lab">
+            <li class="lab" id="open-1">
                 <img src="../image/写真/佐々木研/大坪くん.png" alt="研究写真">
                 <h3 class="subtitle">3人称視点カメラを用いた遠隔操作ロボットの操作性の向上</h3>
                 <h4>- あまりロボットを操作したことのない初心者を対象に調査を行う -</h4>
                 <span>大坪　信輝</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-2">
                 <img src="../image/写真/佐々木研/藤原くん.png" alt="研究写真">
                 <h3>CGを用いた耐候性鋼材のさび画像生成</h3>
                 <span>藤原　大和</span>
@@ -82,7 +81,59 @@
         </ul>
     </div>
 
+    <div class="details" id="hide_area">
+        <ul>
+            <li id="sasaki-1" >
+                <h1>大坪 信輝</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/佐々木研/大坪くん.png" alt="研究写真">
+                    <div class="under_img" id="sasaki"></div>
+                </div>
+                <h3 class="subtitle">3人称視点カメラを用いた遠隔操作ロボットの操作性の向上</h3>
+                <h4>あまりロボットを操作したことのない初心者を対象に調査を行う</h4>
+                <div class="de_line" id="sasaki"></div>
+                <div class="de_context">
+                    <p>ロボットの遠隔操作において、ロボットに搭載されているカメラ映像から得られる情報が重要視される。しかし、ロボットに搭載されているカメラのみだと周囲環境の把握がしづらいことから、全体を俯瞰できる3人称視点カメラを追加で取得して操作する。本研究では、遠隔操作を行う環境における適切な3人称視点カメラの設置場所を調査した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/sasaki_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="sasaki_color">
+                            ユーザーがサービスを安全かつ快適に利用できるようにするための手段の一つ。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="sasaki-2" >
+                <h1>藤原 大和</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/佐々木研/藤原くん.png" alt="研究写真">
+                    <div class="under_img" id="sasaki"></div>
+                </div>
+                <h3>CGを用いた耐候性鋼材のさび画像生成</h3>
+                <div class="de_line" id="sasaki"></div>
+                <div class="de_context">
+                    <p>耐候性鋼橋梁のさびの判定は目視で行われており、作業に時間とコストがかかる。そうした状況の解決策として、判定作業を自動化するシステムが提案されている。しかし、学習データのさび画像が不足しているという課題がある。この課題を解決するため、不足している学習データの代わりとなるさび画像をCGで用意する手法を提案した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/sasaki_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p  id="sasaki_color">
+                            生活を豊かにするための手段のひとつ。
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="../js/lab/sasaki.js"></script>
 
 </body>
 </html>

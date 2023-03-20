@@ -11,8 +11,7 @@
     <!-- レスポンシブにするための設定? -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link href="../css/lab/base.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/lab/base_mobile.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -68,27 +67,27 @@
     <!-- コンテンツ -->
     <div class="contents">
         <ul class="labs">
-            <li class="lab">
+            <li class="lab" id="open-1">
                 <img src="../image/写真/山﨑研/新井さん.png" alt="研究写真">
                 <h3>描画作業の履歴を用いた支援ツールの提案</h3>
                 <span>新井　優希</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-2">
                 <img src="../image/写真/山﨑研/草刈.png" alt="研究写真">
                 <h3>ビデオ会議の分散型SFUホストの提案</h3>
                 <span>草刈　大和</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-3">
                 <img src="../image/写真/山﨑研/沼野くん.png" alt="研究写真">
                 <h3>格闘ゲームにおける複数攻撃候補に対応可能な行動をする対戦AIの提案</h3>
                 <span>沼野　陸</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-4">
                 <img src="../image/写真/山﨑研/山下くん.png" alt="研究写真">
                 <h3>WebAssemblyの実行時統計情報に基づくネイティブバイナリの実行時間の推定</h3>
                 <span>山下　亮輔</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-5">
                 <img src="../image/写真/山﨑研/鈴木たくと.png" alt="研究写真">
                 <h3>IoT データ収集のための複数 broker による MQTT システムの提案 </h3>
                 <span>鈴木　啄斗</span>
@@ -96,7 +95,123 @@
         </ul>
     </div>
 
+    <div class="details" id="hide_area">
+        <ul>
+            <li id="yamazaki-1" >
+                <h1>新井 優希</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/山﨑研/新井さん.png" alt="研究写真">
+                    <div class="under_img" id="yamazaki"></div>
+                </div>
+                <h3>描画作業の履歴を用いた支援ツールの提案</h3>
+                <div class="de_line" id="yamazaki"></div>
+                <div class="de_context">
+                    <p>llustratorなどの描画ツールを使用する際、作図のための操作手順は時間が経つと一部または全て忘れることがある。覚えている操作があれば、それを含む過去の操作履歴を見つけ出すことで操作手順を思い出せると考えられる。描画作業における操作履歴を用いて、忘れた操作手順を検索可能とすることによる支援方法を提案した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yamazaki_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yamazaki_color">
+                            エンジニアにも必要不可欠な知識
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yamazaki-2" >
+                <h1>草刈 大和</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/山﨑研/草刈.png" alt="研究写真">
+                    <div class="under_img" id="yamazaki"></div>
+                </div>
+                <h3>ビデオ会議の分散型SFUホストの提案</h3>
+                <div class="de_line" id="yamazaki"></div>
+                <div class="de_context">
+                    <p>ビデオ会議は多人数での会議を実現するために、SFUサーバが用いられている。サーバを用いずにより多くの人数でP2Pでの会議を作成するために、SFUの機能をクライアント側で動作させた。これをSFUホストと呼ぶ。SFUホストが1台のみだと負荷が集中してしまうため、SFUホストを複数作成することで、SFUホスト間で負荷を分散させた。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yamazaki_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p  id="yamazaki_color">
+                            人々に興味、関心を与えるもの。<br>
+                            全てのものはデザインされていると考える。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yamazaki-3" >
+                <h1>沼野 陸</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/山﨑研/沼野くん.png" alt="研究写真">
+                    <div class="under_img" id="yamazaki"></div>
+                </div>
+                <h3>格闘ゲームにおける複数攻撃候補に対応可能な行動をする対戦AIの提案</h3>
+                <div class="de_line" id="yamazaki"></div>
+                <div class="de_context">
+                    <p>対戦型格闘ゲームは、対戦相手としてAIが操作するキャラクタと対戦ができる。従来のAIは対戦相手の攻撃を予測してから行動を探索しているが、予測が外れた際に選択した行動が有効ではないという課題がある。本研究では、対戦相手の複数の攻撃候補に対してどの攻撃が行われても対応できる行動をするAIの提案を行った。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yamazaki_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yamazaki_color">
+                            私たちの日々の暮らしを支えてくれてるもの
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yamazaki-4" >
+                <h1>山下 亮輔</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/山﨑研/山下くん.png" alt="研究写真">
+                    <div class="under_img" id="yamazaki"></div>
+                </div>
+                <h3>WebAssemblyの実行時統計情報に基づくネイティブバイナリの実行時間の推定</h3>
+                <div class="de_line" id="yamazaki"></div>
+                <div class="de_context">
+                    <p>クラウドコンピューティングの普及に伴い需要が高まるサーバレスシステムにおける技術課題は、 コールドスタートの影響による応答速度の低下である。そこで、本研究では先行研究のシステムのアーキテクチャに基づく提案手法によって、技術課題の解決を目指す。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yamazaki_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yamazaki_color">
+                            人々の生活を豊かにし、彩りを添えるものだと思います。<br>
+                            私は技術者として、そうしたデザインの実現に携わりたいです。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yamazaki-5" >
+                <h1>鈴木 啄斗</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/山﨑研/鈴木たくと.png" alt="研究写真">
+                    <div class="under_img" id="yamazaki"></div>
+                </div>
+                <h3>IoT データ収集のための複数 broker による MQTT システムの提案 </h3>
+                <div class="de_line" id="yamazaki"></div>
+                <div class="de_context">
+                    <p>MQTT は、IoT関連の分野で特に使われている通信プロトコルである。大量のメッセージを通信するとbrokerと呼ばれるサーバーに負荷がかかり、メッセージ到達時間が増大してしまう。本研究では、複数のbrokerを用いて負荷を分散させ、メッセージ到達の遅延を解消するシステムの提案を行った。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yamazaki_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yamazaki_color">
+                            常にいろいろな場所で自分の人生を豊かにしてくれるもの
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="../js/lab/yamazaki.js"></script>
 
 </body>
 </html>

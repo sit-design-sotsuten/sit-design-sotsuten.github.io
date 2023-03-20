@@ -11,8 +11,7 @@
     <!-- レスポンシブにするための設定? -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link href="../css/lab/base.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/lab/base_mobile.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -68,7 +67,7 @@
     <!-- コンテンツ -->
     <div class="contents">
         <ul class="labs">
-            <li class="lab">
+            <li class="lab" id="open-1">
                 <img src="../image/写真/清水研/河野くん.png" alt="研究写真">
                 <h3>ReAT: Long Text Encoder Representations with Attention Tokens</h3>
                 <span>河野 治憲</span>
@@ -76,7 +75,37 @@
         </ul>
     </div>
 
+    <div class="details" id="hide_area">
+        <ul>
+            <li id="shimizu-1" >
+                <h1>河野 治憲</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/清水研//河野くん.png" alt="研究写真">
+                    <div class="under_img" id="shimizu"></div>
+                </div>
+                <h3>ReAT: Long Text Encoder Representations with Attention Tokens</h3>
+                <div class="de_line" id="shimizu"></div>
+                <div class="de_context">
+                    <p>BERTは2018年に提案された大規模言語モデルで, 自然言語処理分野を大きく発展させた. しかし, BERTは1000単語を超えるような長文の処理には適していない. 本研究では文章を文単位で分割させることで課題の解決を図り, ReATという新たな言語モデルの提案を行った.</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/shimizu_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="shimizu_color">
+                            工学における哲学的探究 :)
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="../js/lab/shimizu.js"></script>
 
 </body>
 </html>

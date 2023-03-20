@@ -11,8 +11,7 @@
     <!-- レスポンシブにするための設定? -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link href="../css/lab/base.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/lab/base_mobile.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -68,17 +67,17 @@
     <!-- コンテンツ -->
     <div class="contents">
         <ul class="labs">
-            <li class="lab">
+            <li class="lab" id="open-1">
                 <img src="../image/写真/繁里研/青木くん.png" alt="研究写真">
                 <h3>一人暮らし自炊大学生を対象とする食洗機の提案</h3>
                 <span>青木　柚太</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-2">
                 <img src="../image/写真/繁里研/小林さん.png" alt="研究写真">
                 <h3>茶道をもっと身近に感じてもらうための体験提供</h3>
                 <span>小林　詩織</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-3">
                 <img src="../image/写真/繁里研/小泉さん.png" alt="研究写真">
                 <h3>デザインスケッチにおける表情描写の体系化</h3>
                 <span>小泉　圭吹</span>
@@ -86,7 +85,80 @@
         </ul>
     </div>
 
+    <div class="details" id="hide_area">
+        <ul>
+            <li id="shigeri-1" >
+                <h1>青木 柚太</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/繁里研/青木くん.png" alt="研究写真">
+                    <div class="under_img" id="shigeri"></div>
+                </div>
+                <h3>一人暮らし自炊大学生を対象とする食洗機の提案</h3>
+                <div class="de_line" id="shigeri"></div>
+                <div class="de_context">
+                    <p>近年の私達学生や若者は朝食をはじめとする３食の摂取率、自炊率の低下が問題視されています。朝食を作る時間がない。夕飯の食器の後片付けが面倒。食事を摂るという行動から食器を洗うというフェーズを抽出し、一人暮らし専用の食洗機を提案することで片付けの手間を省き、将来的な自炊率の向上を目指します。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/shigeri_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="shigeri_color">
+                            自分で正解を見つけられないものであり、見つけてはいけないもの
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="shigeri-2" >
+                <h1>小林 詩織</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/繁里研/小林さん.png" alt="研究写真">
+                    <div class="under_img" id="shigeri"></div>
+                </div>
+                <h3>茶道をもっと身近に感じてもらうための体験提供</h3>
+                <div class="de_line" id="shigeri"></div>
+                <div class="de_context">
+                    <p>近年、日常から茶道が離れてしまい、茶道に対して堅苦しい印象が根強く残っている。そこで、茶道本来の良さや楽しさを知ってもらうために、現代に沿った新しい茶道の体験提供を提案することとした。ここでは、茶道への第一歩として、茶道の思いやりの精神、お茶を点てて飲むことの楽しさを知ってもらうことを目標とする。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/shigeri_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p  id="shigeri_color">
+                            自己表現の一つ。物の大小に関わらず、自分の色を出したり、自分の力を発揮したりして、世の中に出すことが出来るツール。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="shigeri-3" >
+                <h1>小泉 圭吹</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/繁里研/小泉さん.png" alt="研究写真">
+                    <div class="under_img" id="shigeri"></div>
+                </div>
+                <h3>デザインスケッチにおける表情描写の体系化</h3>
+                <div class="de_line" id="shigeri"></div>
+                <div class="de_context">
+                    <p>あなたは例えば「高揚感を抱いている人」の表情を描きたい時、誰が見ても分かるように描けますか？余裕？時間をかければ？人の顔は無理？<br>
+                        自分が想定した感情を正確に伝える表情を描くのは意外と難しいものです。今回は正確性だけではなく、「練習不要で・素早く・多くの」表情を描けるような方法を研究してみました。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/shigeri_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="shigeri_color">
+                            沼。もがいて苦しいのに、それにハマってる人が周りにたくさん居る。ずいぶん魅力があるみたいです。
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="../js/lab/shigeri.js"></script>
 
 </body>
 </html>

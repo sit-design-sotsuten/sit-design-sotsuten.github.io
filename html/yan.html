@@ -11,8 +11,7 @@
     <!-- レスポンシブにするための設定? -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link href="../css/lab/base.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/lab/base_mobile.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -68,69 +67,69 @@
     <!-- コンテンツ -->
     <div class="contents">
         <ul class="labs">
-            <li class="lab">
+            <li class="lab" id="open-1">
                 <img src="../image/写真/梁研/渡邊さん.png" alt="研究写真">
                 <h3>グローバル展開サービスにおける情報提示の一貫性について</h3>
                 <span>渡邊　亜未</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-2">
                 <img src="../image/写真/梁研/古橋くん.png" alt="研究写真">
                 <h3 class="subtitle">Eコマースでの3Dコンフィギュレータの有用性</h3>
                 <h4>- カーソル操作におけるにおけるユーザビリティ向上 -</h4>
                 <span>古橋　優吾</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-3">
                 <img src="../image/写真/梁研/松本くん.png" alt="研究写真">
                 <h3 class="subtitle">UIの情報提示の違いがユーザーの心理に及ぼす影響</h3>
                 <h4>- セルフオーダーのスキャナビリティを中心に -</h4>
                 <span>松本　幹大</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-4">
                 <img src="../image/写真/梁研/佐分さん.png" alt="研究写真">
                 <h3>若者のアルバイト早期離職に対する心理的サポートについて</h3>
                 <span>佐分　わか奈</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-5">
                 <img src="../image/写真/梁研/大森さん.png" alt="研究写真">
                 <h3 class="subtitle">待ち時間の認知における情報提示の有用性について</h3>
                 <h4>- スプラッシュスクリーン活用の試み -</h4>
                 <span>大森　すみれ</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-6">
                 <img src="../image/写真/梁研/谷尾さん.png" alt="研究写真">
                 <h3>UIエレメントにおけるかわいい感性の活用について</h3>
                 <span>谷尾　美亜</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-7">
                 <img src="../image/写真/梁研/上嶋くん.png" alt="研究写真">
                 <h3 class="subtitle">情報表現がユーザーの認知及び負荷に与える影響</h3>
                 <h4>- サムネイルのUI的特徴を中心に -</h4>
                 <span>上嶋　優輝</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-8">
                 <img src="../image/写真/梁研/海野さん.png" alt="研究写真">
                 <h3>オノマトペを用いた情報提示による質感認知への影響</h3>
                 <span>海野　恵</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-9">
                 <img src="../image/写真/梁研/益子さん.png" alt="研究写真">
                 <h3 class="subtitle">地域観光の情報発信におけるタッチポイントの検討</h3>
                 <h4>- 若者のSNS利用特徴の調査を中心に -</h4>
                 <span>益子　美菜実</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-10">
                 <img src="../image/写真/梁研/全さん.png" alt="研究写真">
                 <h3 class="subtitle">オンライン決済における心理的な不安感解消に関する研究</h3>
                 <h4>- インタラクションの待ち時間について -</h4>
                 <span>全　玲奈</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-11">
                 <img src="../image/写真/梁研/秋葉さん.png" alt="研究写真">
                 <h3 class="subtitle">擬態語を用いた質感印象への影響度</h3>
                 <h4>- 質感・感情オノマトペの提示による印象への作用の違い -</h4>
                 <span>秋葉　美怜</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-12">
                 <img src="../image/写真/梁研/安西さん.png" alt="研究写真">
                 <h3>創造力を育む体験型学習におけるバイアス解消の試み</h3>
                 <span>安西　竜晟</span>
@@ -138,7 +137,277 @@
         </ul>
     </div>
 
+    <div class="details" id="hide_area">
+        <ul>
+            <li id="yan-1" >
+                <h1>渡邊 亜未</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/渡邊さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3>グローバル展開サービスにおける情報提示の一貫性について</h3>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>ICTの発展により、海外ECサイトを利用する機会は増えているが、利用率は低いことがわかっている。そこで、サービスのグロバール化におけるユーザーのメンタルモデルの違いによる問題に着目した。認知しやすいUI要素の観点から、予約サイトの画面遷移における視覚情報の一貫性を保つことでペインポイントが軽減できることを確かめる。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            料理で胃袋を掴むように、デザインでは人の心を掴むことができる。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-2" >
+                <h1>古橋 優吾</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/古橋くん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3 class="subtitle">Eコマースでの3Dコンフィギュレータの有用性</h3>
+                <h4>カーソル操作におけるにおけるユーザビリティ向上</h4>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>自動車メーカーではオンライン中心の販売戦略が加速されており、ARや3Dコンフィギュレータを活用して消費者の都合に合わせて情報を多角的に認知できるようにしている。しかしメーカーごとに情報掲示が異なるため能動的情報に慣れていない人が使いこなせていない。従って本研究ではカーソル操作からユーザビリティ向上について考えた。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p  id="yan_color">
+                            「モノ」や「コト」を通してユーザーに最高の体験を提供すること
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-3" >
+                <h1>松本 幹大</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/松本くん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3 class="subtitle">UIの情報提示の違いがユーザーの心理に及ぼす影響</h3>
+                <h4>セルフオーダーのスキャナビリティを中心に</h4>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>近年セルフオーダーと呼ばれる端末が急増している。しかし、セルフオーダーには「操作中、後ろに並んでいる人を気にして焦りやすい」という問題がある。本研究はセルフオーダーのUIの情報提示を変えることで、そのような心理的な負担を軽減できるかどうかを研究した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            理想の追求
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-4" >
+                <h1>佐分 わか奈</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/佐分さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3>若者のアルバイト早期離職に対する心理的サポートについて</h3>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>近年、少子高齢化に伴い、労働に従事する人口不足が深刻化している。また労働者側も働くことに対する様々な変化が見られる。若者のアルバイトにおいて、人材サービスとのタッチポイントを踏まえた上で早期離職という問題について考える。それに伴って必要とされる心理的サポートを先行研究や実際に行われている事例を元に提案した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            白に他の色を混ぜること
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-5" >
+                <h1>大森 すみれ</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/大森さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3 class="subtitle">待ち時間の認知における情報提示の有用性について</h3>
+                <h4>- スプラッシュスクリーン活用の試み -</h4>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>アプリを立ち上げたときに表示されるスプラッシュスクリーン画面は、サービスの第一印象の形成に大きな影響を与える。ユーザーが目的をもってアプリを起動した際に、適切な表示がされないことでUXを損なってしまう恐れがある。そのため、本研究では海外の事例とも照らし合わせながらマイクロモーメントにおける有効的な情報提示を検討した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            最高な出会いをもたらしてくれて楽しい日々を過ごすことができる素晴らしいコミュニケーションこれぞまさにOHMYGOD
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-6" >
+                <h1>谷尾 美亜</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/谷尾さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3>UIエレメントにおけるかわいい感性の活用について</h3>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>「かわいい」は現在注目されている感性であり、人々のポジティブな行動や気持ちを生み出す力があるということがわかっている。「かわいい」はプロダクトやサービスの機能価値の同質化が進んだ現代において重要となるUXの向上に結びつく。本研究では、「かわいい」とUIエレメントとの関係について調査を行い、ガイドラインを作成した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            プリキュアの存在が私たちに勇気や元気を与えるように、デザインはユーザーの生活にポジティブやハッピーを与える手段のひとつ
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-7" >
+                <h1>上嶋 優輝</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/上嶋くん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3 class="subtitle">情報表現がユーザーの認知及び負荷に与える影響</h3>
+                <h4>サムネイルのUI的特徴を中心に</h4>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>本研究ではICTの発展に伴い市場の拡大が続いている情報提供サービス、中でも膨大な数の映像コンテンツを配信することや、市場内の類似サービスとの差別化を図ることを背景に、既存のコンテンツサービスとは異なる独自の情報表現を施したOTTサービスのUIに焦点を当て、情報表現の違いがユーザーの認知及び負荷へ与える影響を提示した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            ユーザーの問題を客観的に解決するための道具と技術 。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-8" >
+                <h1>海野 恵</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/海野さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3>オノマトペを用いた情報提示による質感認知への影響</h3>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>昨今、画面上の情報だけに頼ったECサイトでのショッピングが当たり前になったことから、購入したモノが「イメージしていた質感と違った」という理由で失敗したと感じる人が増ええいる。そこで、オノマトペと、アイコン・モーショングラフィックなどの視覚情報を組み合わせた、新たな質感の情報提示方法を検討を行った。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            気がついたらやってるもの。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-9" >
+                <h1>益子 美菜実</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/益子さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3 class="subtitle">地域観光の情報発信におけるタッチポイントの検討</h3>
+                <h4>若者のSNS利用特徴の調査を中心に</h4>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>SNSにより若者の情報収集方法は複雑化し、趣味嗜好は多様化している。旅行においてはビジュアル検索に加えて、欲しい情報に応じてWeb検索も利用する。しかし地方自治体は資金・人員不足から若者の情報収集の特徴を掴めずにいる。そのため若者のSNS利用特徴と旅行におけるヒアリング調査から、地域観光における情報発信のタッチポイントを検討した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            ユーザーの現実を理想に限りなく近づけるためのひとつの手段。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-10" >
+                <h1>全 玲奈</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/全さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3 class="subtitle">オンライン決済における心理的な不安感解消に関する研究</h3>
+                <h4>インタラクションの待ち時間について</h4>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>
+                        近年キャッシュレス化が進み、手軽な購入活動が主流になっている。しかし、オンラインでのキャッシュレス決済ではインジケータを用いて支出に対するフィードバックをしており、キャッシュレス決済アプリよりもお金の重みが弱い傾向がある。そのため、決済時の心理的な不安感を解消するようなインジケータの実験・サンプル作成を行なった。
+                    </p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            ユーザーの不満や要望に共感し、付加価値を与えて人の生活を豊かにすること。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-11" >
+                <h1>秋葉 美怜</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/秋葉さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3 class="subtitle">擬態語を用いた質感印象への影響度</h3>
+                <h4>質感・感情オノマトペの提示による印象への作用の違い</h4>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>質感表現では言語情報が用いられることが多く、中でもオノマトペは人の感性や微細な表現ができる。しかし、誤った情報の場合どのような影響が生じるのか。また、印象の受け取り方の違いによる感情の変化から質感と感情には関係性があると考えられる。本研究では質感・感情に関するオノマトペの提示による質感印象への作用を明らかにした</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            言語の壁を超えて通じるコミュニケーション
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yan-12" >
+                <h1>安西 竜晟</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/梁研/安西さん.png" alt="研究写真">
+                    <div class="under_img" id="yan"></div>
+                </div>
+                <h3>創造力を育む体験型学習におけるバイアス解消の試み</h3>
+                <div class="de_line" id="yan"></div>
+                <div class="de_context">
+                    <p>日本におけるイノベーションが少ない要因の一つに創造力の低さが挙げられる。創造力とは新規性と適切性が高いアイデアを生み出す能力であるが、日本は文化的・地理的原因でそれらを向上させることが難しいと言われている。本研究では日本人がそれらの壁を打ち壊して創造的なアイデアを生み出すための方法論について深く考察した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yan_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yan_color">
+                            信者が多い宗教の一派
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="../js/lab/yan.js"></script>
 
 </body>
 </html>

@@ -11,8 +11,7 @@
     <!-- レスポンシブにするための設定? -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link href="../css/lab/base.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../css/lab/base_mobile.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -69,58 +68,58 @@
     <!-- コンテンツ -->
     <div class="contents">
         <ul class="labs">
-            <li class="lab">
+            <li class="lab" id="open-1">
                 <img src="../image/写真/吉武研/伊藤.png" alt="研究写真">
                 <h3>視線情報によるメンタルモデルの推定</h3>
                 <span>伊藤　拓巳</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-2">
                 <img src="../image/写真/吉武研/安永.png" alt="研究写真">
                 <h3>VR,MR の効果的な活用方法の検討</h3>
                 <span>安永　悠里</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-3">
                 <img src="../image/写真/吉武研/福田.png" alt="研究写真">
                 <h3 class="subtitle">照明による生活の質向上</h3>
                 <h4>- シーン・目的に合わせた照明ガイドブックの提案 -</h4>
                 <span>福田　歩美</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-4">
                 <img src="../image/写真/吉武研/三本木.png" alt="研究写真">
                 <h3 class="subtitle">メタバースにおけるアバターの感情伝達向上</h3>
                 <h4>- 尻尾の動きを題材として -</h4>
                 <span>三本木　慎太郎</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-5">
                 <img src="../image/写真/吉武研/佐久間.png" alt="研究写真">
                 <h3 class="subtitle">学修行動における振り返り体験向上</h3>
                 <h4>- 芝浦工業大学の取り組みを事例に -</h4>
                 <span>佐久間　瑞季</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-6">
                 <img src="../image/写真/吉武研/丸さん.png" alt="研究写真">
                 <h3 class="subtitle">施設案内表示の意味理解度向上</h3>
                 <h4>- 動きのあるピクトグラムの提案 -</h4>
                 <span>丸　千華</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-7">
                 <img src="../image/写真/吉武研/北城.png" alt="研究写真">
                 <h3 class="subtitle">レトロ商品に感じるストーリーの分類</h3>
                 <h4>- 体験価値デザイン手法提案のために -</h4>
                 <span>北城　満理奈</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-8">
                 <img src="../image/写真/吉武研/岩田さん.png" alt="研究写真">
                 <h3>大型ディスプレイのジェスチャー操作における操作性の向上</h3>
                 <span>岩田 昂樹</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-9">
                 <img src="../image/写真/吉武研/小澤さん.png" alt="研究写真">
                 <h3 class="subtitle">エンジニアのためのマイクロインタラクション活用ツールの検討と提案</h3>
                 <h4>- 学習支援オンラインサービスを題材に -</h4>
                 <span>小澤　佑花</span>
             </li>
-            <li class="lab">
+            <li class="lab" id="open-10">
                 <img src="../image/写真/吉武研/山本さん.png" alt="研究写真">
                 <h3 class="subtitle">光超音波3Dイメージング装置の撮影用UIの研究</h3>
                 <h4>- 人間中心設計プロセスを適用した提案 -</h4>
@@ -129,7 +128,235 @@
         </ul>
     </div>
 
+    <div class="details" id="hide_area">
+        <ul>
+            <li id="yoshitake-1" >
+                <h1>伊藤 拓巳</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/伊藤.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3>視線情報によるメンタルモデルの推定</h3>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>人は自身の価値観や思い込み、つまりメンタルモデルを参考に行動します。ユーザーのメンタルモデルを推定することで最適なデザインを検討できる一方、既存の推定方法は難易度が高いものとなっています。そこで、推定方法の中でもデータの採取・分析が容易な視線情報に着目し、視線情報から推定可能なメンタルモデルを特定しました。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            人とつながるきっかけ
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-2" >
+                <h1>安永 悠里</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/安永.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3>VR,MR の効果的な活用方法の検討</h3>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>近年 VR,MR のソフトウェア・サービスは拡大傾向にあり、その市場は年々拡大している。しかし両技術については実用的なレベルでの利用がまだ発展途上であり、明確な効力などについての研究が十分になされていない。また比較的類似する技術であるため混合されて考えられることも多く、それぞれの利点を明確にすることが求められている。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p  id="yoshitake_color">
+                            世界を自分が好きなように変えるための手段
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-3" >
+                <h1>福田 歩美</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/福田.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3 class="subtitle">照明による生活の質向上</h3>
+                <h4>- シーン・目的に合わせた照明ガイドブックの提案 -</h4>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>照明技術の革新によって設計・活用の選択肢が広がり、照明は単に明るさを提供するだけのものではなく、質的側面の重要性が示されている。本研究では、「照明により人々の生活をより豊かに過ごしやすくすること」を目標に据え、先行研究やいくつかの実験を踏まえた、様々なシーンや目的に適切な照明環境構築のための情報提供を行う。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            想像し得る理想に現実を近づけるために行う、正解のない手段。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-4" >
+                <h1>三本木 慎太郎</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/三本木.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3 class="subtitle">メタバースにおけるアバターの感情伝達向上</h3>
+                <h4>～ 尻尾の動きを題材として ～</h4>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>近年、様々な場所でメタバースを利用したアバターによる他者交流が普及し始めている。他者と交流するために表情やジェスチャーを使用して感情表現を行う一方で、表現方法は一方向かつ限定的な方法ばかりである。そのため、アバターの感情表現方法として、新たに尻尾動作を用いた細かい感情表現方法を作成し、感情伝達向上を目指した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            人をより良いモノ・コトへ導いていく助けとなるもの。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-5" >
+                <h1>佐久間 瑞季</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/佐久間.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3 class="subtitle">学修行動における振り返り体験向上</h3>
+                <h4>- 芝浦工業大学の取り組みを事例に -</h4>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>近年コロナ禍による学修意欲の低下が問題となり、振り返りの重要性が高まっている。本研究では芝浦工業大学の振り返り支援の取り組みを事例に、大学が求める振り返りの分類と学生の振り返り意欲向上が望めるタイミングや内容について調査し明らかにすることで、大学支援の改善提案と学生目線からの振り返り体験の向上を目指した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            ユーザーの行動をポジティブに変化させ、生活を豊かにするきっかけをつくること
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-6" >
+                <h1>丸 千華</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/丸さん.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3 class="subtitle">施設案内表示の意味理解度向上</h3>
+                <h4>- 動きのあるピクトグラムの提案 -</h4>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>ピクトグラムにて表している意味の特徴を分析・整理することであり、またその結果から動きの付加が有効なピクトグラムを特定し、効果的な動きのあるピクトグラムを提案すること。動きを付加することで、より暮らしやすい社会の実現を目指す。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            考えたもの・ことを表現すること。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-7" >
+                <h1>北城 満理奈</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/北城.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3 class="subtitle">レトロ商品に感じるストーリーの分類</h3>
+                <h4>- 体験価値デザイン手法提案のために -</h4>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>サービス/プロダクト設計において、体験価値が重要視され、価値提案型のアプローチが求められている。レトロ商品は、機能的に優れていないにも関わらず若者の間で娯楽的に人気であり、その魅力を探ることが良い体験を生むヒントとなると考えた。レトロ商品に感じるストーリーを調査、分類し、ストーリー設計のフレームワークを提案した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            ユーザーに対する思いやり
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-8" >
+                <h1>岩田 昂樹</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/岩田さん.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3>大型ディスプレイのジェスチャー操作における操作性の向上</h3>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>大型ディスプレイの入力操作の一つとして、ジェスチャー操作が注目されている。ジェスチャー操作はより快適な操作を実現する為、生産性の向上が求められている。そこで本研究では指差しによるポインティングに焦点を当て、より好適な選択操作として活用するための基礎的なデータ収集を行い、操作性向上を目指した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            かんがえていることをかたちにすること。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-9" >
+                <h1>小澤 佑花</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/小澤さん.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3 class="subtitle">エンジニアのためのマイクロインタラクション活用ツールの検討と提案</h3>
+                <h4>学習支援オンラインサービスを題材に</h4>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>教育現場ではICT活用教育が推進されている。学習教材の良いUX実現にはマイクロインタラクションなど細かなデザインが重要であるが、開発現場では後回しにされやすく、エンジニアが細かいデザインまで実現することは難しい。本研究では、エンジニアのためのマイクロインタラクションの実現に役立つツールの検討し、提案を目指した。</p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            みんなが楽しく生きるための手段。
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li id="yoshitake-10" >
+                <h1>山本 瑛士</h1>
+                <div class="de_imgs">
+                    <img src="../image/写真/吉武研/山本さん.png" alt="研究写真">
+                    <div class="under_img" id="yoshitake"></div>
+                </div>
+                <h3 class="subtitle">光超音波3Dイメージング装置の撮影用UIの研究</h3>
+                <h4>人間中心設計プロセスを適用した提案</h4>
+                <div class="de_line" id="yoshitake"></div>
+                <div class="de_context">
+                    <p>
+                        光と超音波を融合した新技術を搭載する画像診断装置の撮影用UIを対象した。臨床現場の現地調査を実施し、課題抽出を行い、利用状況を明らかにした。課題に対するの仮説立てを行い、解決策の有効性を検証するためプロトタイプの作成評価を実施し臨床での装置の利用目的に適したUIデザインを検討した。
+                    </p>
+                    <div class="de_comment">
+                        <div class="de_tai">
+                            <img src="../image/labs/yoshitake_tai.png" alt="">
+                            <span>あなたにとってデザインとは?</span>
+                        </div>
+                        <p id="yoshitake_color">
+                            ヒトの現象や社会・環境の現象を捉えて、お互いを融け込ませる行為。
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="../js/lab/yoshitake.js"></script>
 
 </body>
 </html>
