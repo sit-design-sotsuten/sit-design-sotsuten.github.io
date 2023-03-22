@@ -256,6 +256,25 @@ header {
     font-weight: 600;
 }
 
+.top_endding {
+    /* display: none;  会期終了後消す */
+
+    text-align: center;
+
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #27378E;
+
+    padding: 8px 164px;
+    margin: 40px 0px 0px;
+
+    background: #FFFFFF;
+}
+
 /* あいさつ */
 .message {
     display: flex;
@@ -614,6 +633,8 @@ footer {
 /* フッダー */
 
 .reserve_btn {
+    /* display: none; */
+    visibility: hidden; /* 会期終了したら　 */
     /* 予約フォーム */
 
     /* Auto layout */
